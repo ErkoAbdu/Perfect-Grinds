@@ -8,13 +8,10 @@ To access the admin sections of this app, just type localhost:7777/admin/review 
 This website is a simple platform created for a cozy neighborhood coffee shop. The main features of this website is the main page which includs an FAQ at the bottom with an accordian style menu. In addition to this the Testimonials page pulls data from the MongoDB collection where everything is stored and displays it nicely on the screen. There is also an admin section where you can view, add and delete data from MongoDB!
 
 ## Technologies Used:
-Node.js: It's the engine behind the scenes, making everything run smoothly.
-
-Express.js: This framework helps handle web requests and responses, keeping things snappy.
-
-MongoDB: Our trusty database where we store all the important stuff.
-
-Bootstrap: Makes sure the website looks good on any device, whether you're on your phone or laptop.
+- Node.js: It's the engine behind the scenes, making everything run smoothly.
+- Express.js: This framework helps handle web requests and responses, keeping things snappy.
+- MongoDB: Our trusty database where we store all the important stuff.
+- Bootstrap: Makes sure the website looks good on any device, whether you're on your phone or laptop.
 
 ## Getting Started:
 - Clone the repository.
