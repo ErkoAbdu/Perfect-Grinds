@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title} | Perfect Grinds
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous") 
+    link(rel="stylesheet", type="text/css", href="/css/styles.css")
+
+  body
+    nav.py-2.nav-header-bg-color-1.Josefin-medium-500
+        div.container.d-flex.flex-wrap
+            ul.nav.me-auto  
+                li.nav-item 
+                  a.nav-link.link-dark.px-2.active(href="/") Home
+                li.nav-item 
+                  a.nav-link.link-dark.px-2(href="/about") About Us
+                li.nav-item 
+                  a.nav-link.link-dark.px-2(href="/testimonials") Testimonials
+            ul.nav 
+                li.nav-item
+                  a.nav-link.link-dark.px-2(href="#") Login
+                li.nav-item 
+                  a.nav-link.link-dark.px-2(href="#") Sign-up
+
+    header.py-3.mb-0.nav-header-bg-color-2.noto-serif-bold-700
+      div.container.d-flex.flex-wrap.justify-content-center
+        a.d-flex.align-items-center.mb-3.mb-lg-0.me-lg-auto.text-dark.text-decoration-none
+          img.coffee-img(src="/img/coffee.png" alt="brown coffee mug with vapor")
+          //- Image Source: https://www.pngwing.com/en/free-png-brvim
+          span.fs-4.ml-2 Perfect Grinds
+        form.col-12.col-lg-auto.mb-3.mb-lg-0
+          input(type="search", placeholder="Search...").form-control
+
+    main#main
+      block layout-content
+
+  div.container-footer.Josefin-medium-500
+    footer.py-3.my-4 
+      ul.nav.justify-content-center.border-bottom.pb-3.mb-3
+        li.nav-item
+          a(href="/").nav-link.px-2.text-muted Home
+        li.nav-item
+          a(href="/about").nav-link.px-2.text-muted About us
+        li.nav-item
+          a(href="/testimonials").nav-link.px-2.text-muted Testimonials
+      p.text-center.text-muted &#169;2024 Erko Abdurahman
+  

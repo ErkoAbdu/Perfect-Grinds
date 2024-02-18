@@ -1,0 +1,16 @@
+extends common/layout 
+
+block layout-content 
+	h1.page-title.text-center.Josefin-bold-700.mt-5 Admin Review Page
+	a.add-review.d-flex.justify-content-center.mb-5.Josefin-medium-500(href="/admin/review/add") + Add new review 
+	div.row.row-cols-1.row-cols-md-3.g-4.d-flex.justify-content-center
+		each review in menu
+			div.col
+				div.card
+					div.card-body
+						h5.card-title.noto-serif-bold-700 #{review.Full_Name}
+						h6.card-subtitle.mb-2.text-body-secondary.noto-serif-regular-400 #{review.Rating_of_10}/10
+						p.card-text.noto-serif-light-300 #{review.Review}
+						form.noto-serif-light-300(action="/admin/review/delete")
+								input(type="hidden", name="reviewId", value=review._id)
+								button(type="submit") Delete Review

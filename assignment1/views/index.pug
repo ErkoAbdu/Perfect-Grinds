@@ -1,0 +1,28 @@
+extends common/layout
+
+block layout-content
+    div.landing-img-container-fluid
+        div.img-container-fluid.mb-5.overflow-hidden
+            img.landing-img-bg(src="img/cup-coffee.jpg", alt="cup of coffee on wood", width="100%", height="auto")
+            //- image source: https://shoporocaffe.com/cdn/shop/collections/1f7e2c360287502563bcb57c0efd6dd9.jpg?v=1671032707&width=1600
+        div.h1-welcome.Josefin-bold-700
+            h1.page-title.text-center Welcome To Amazing Coffee.
+    div.faq-container.noto-serif-bold-700
+        div.div.accordion.accordion-flush(id="accordionPanelsStayOpenExample")
+            h2.faq-header.text-center FAQ
+            div.div.accordion-item
+                h2.accordion-header
+                    button.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#panelsStayOpen-collapseOne", aria-expanded="true", aria-controls="panelsStayOpen-collapseOne") Why Perfect Grinds?
+                div.div#panelsStayOpen-collapseOne.accordion-collapse.collapse
+                    div.div.accordion-body.noto-serif-light-300 We at Perfect Grinds believe in making a consistently fantastic cup of joe. We were started by coffee lovers with the goal of giving coffee lovers only the finest brews with our beans sourced ethically!
+            div.div.accordion-item
+                h2.accordion-header
+                    button.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#panelsStayOpen-collapseTwo", aria-expanded="false", aria-controls="panelsStayOpen-collapseTwo") But Tim's is cheaper...
+                div.div#panelsStayOpen-collapseTwo.accordion-collapse.collapse
+                    div.div.accordion-body.noto-serif-light-300 We also agree that Tim's can serve you much cheaper coffee however you get what you pay for in worse quality and service. By coming to Perfect Grinds for your morning caffine hit you not only get better quality and service, but you also get to support a local buisness and not a giant multi-million dollar corporation!
+            div.div.accordion-item
+                h2.accordion-header
+                    button.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#panelsStayOpen-collapseThree", aria-expanded="false", aria-controls="panelsStayOpen-collapseThree") Will there be more locations?
+                div.div#panelsStayOpen-collapseThree.accordion-collapse.collapse
+                    div.div.accordion-body.noto-serif-light-300 The goal is to get a strong foothold here at our only location, and once we believe that we can expand without worry of it affecting quality we most definetly will! Keep a look out on our Instagram account @PerfGrinds for any news regarding our shop!
+

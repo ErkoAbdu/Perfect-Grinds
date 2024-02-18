@@ -1,0 +1,19 @@
+extends common/layout
+
+block layout-content 
+	h2.add-review-header.text-center.mt-5.Josefin-bold-700 Add Review
+	div.add-review-container.d-flex.justify-content-center
+		form(method="post", action="/admin/review/add/submit").w-50.mt-3
+			div.mb-3.noto-serif-regular-400
+				label(for="flName").form-label
+				strong Full Name:
+				input.form-control.noto-serif-light-300(type="text", id="flName", name="Full_Name", placeholder="Enter Full Name Here...")
+			div.mb-3.noto-serif-regular-400
+				label(for="rate10").form-label 
+				Strong Rating Out Of 10:
+				input.form-control.noto-serif-light-300(type="number", min="0", max="10", id="rate10", name="Rating_of_10", placeholder="Type Here...")
+			div.mb-3.noto-serif-regular-400
+				label(for="reviewText").form-label 
+				Strong Review:
+				textarea.form-control.noto-serif-light-300(type="text", id="reviewText", name="Review", placeholder="Write Your Review Here...")
+			button.btn.btn-primary.noto-serif-light-300.btn-secondary(type="submit") Add Review

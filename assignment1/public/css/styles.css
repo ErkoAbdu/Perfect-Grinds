@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0px;
+  background-color: #ede8e0 !important;
+}
+/* NAV BAR CONTENT */
+.container-nav {
+  margin: 0px;
+}
+.navbar {
+  background-color: brown;
+}
+.navbar-brand {
+  padding-left: 20px;
+}
+.form-inline {
+  padding-right: 15px;
+}
+.bg-brown {
+  background-color: #302414 !important;
+}
+.nav-header-bg-color-1 {
+  background-color: #6b6051;
+}
+.nav-header-bg-color-2 {
+  background-color: #948c7c;
+}
+.nav-link:hover {
+  color: burlywood !important;
+}
+/* INDEX IMG AND FAQ STYLING */
+.coffee-img {
+  margin-right: 12px;
+}
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.accordion {
+  --bs-accordion-btn-bg: #ede8e0;
+  --bs-accordion-active-bg: #948c7c;
+  --bs-accordion-active-color: #000;
+  --bs-accordion-bg: #ede8e0;
+  --bs-accordion-color: #000;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-focus-border-color: unset;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.accordion-button {
+  border-top: 1px solid #000;
+}
+.img-container {
+  /* position: relative; */
+  background-image: url("../img/cup-coffee.jpg");
+}
+.h1-welcome {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  color: #ede8e0;
+}
+.landing-img-bg {
+  width: auto;
+}
+/* ABOUT US STYLING */
+.about-us-custom {
+  background-image: url("../img/about-coffee.jpg");
+  background-size: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+.about-page-title {
+  /* position: absolute; */
+  top: 25%;
+  left: 43%;
+  color: #ede8e0;
+}
+.about-us-text {
+  /* position: absolute; */
+  word-wrap: break-word;
+  width: 750px;
+  top: 65%;
+  left: 20%;
+  color: #000;
+}
+.card {
+  --bs-card-title-color: #000;
+  --bs-card-bg: #ede8e0;
+  --bs-card-border-color: ;
+}
+/* TESTIMONIAL STYLING */
+.row {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* ADMIN REVIEW PAGE */
+
+/* ADMIN REVIEW ADD PAGE */
+
+/* FONTS */
+.Josefin-medium-500 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+}
+.noto-serif-regular-400 {
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+}
+.Josefin-bold-700 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+.noto-serif-bold-700 {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+}
+.noto-serif-light-300 {
+  font-family: "Noto Serif", serif;
+  font-weight: 300;
+}

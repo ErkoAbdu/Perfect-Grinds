@@ -1,0 +1,11 @@
+extends common/layout
+block layout-content
+  h2.testiominal-header.text-center.mt-5.Josefin-bold-700 Testimonials  
+  p.testimonial-sub-text.text-center.mb-5.Josefin-medium-500 From Our Valued Patrons!
+  each review in menu 
+    div.test-container.d-flex.justify-content-center.mt-3
+      div.card.w-50.text-center
+        div.card-header.noto-serif-bold-700 <strong>#{review.Full_Name}</strong>
+        div.card-body 
+          h5.card-title.noto-serif-regular-400 #{review.Rating_of_10}/10
+          p.card-text.noto-serif-light-300 #{review.Review}
