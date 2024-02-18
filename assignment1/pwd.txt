@@ -1,6 +1,0 @@
-MongoDB Atlas
-USER: admin
-PASS: uPrRFjlUv53o7hND
-
-USER: dbUser
-PASS: KrzaAWIOVUl3eaSS
